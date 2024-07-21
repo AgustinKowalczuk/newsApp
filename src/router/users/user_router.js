@@ -27,7 +27,6 @@ user_router.use("/search", (req, res) => {
 user_router.use("/update", (req, res) => {
     res.send({ msg: "This route is for update", status: 200 })
 })
-
 user_router.get("/*", (req, res) => {
     res.send({ status: 404, msg: "Route not found" })
 })

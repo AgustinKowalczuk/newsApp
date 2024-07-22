@@ -17,7 +17,8 @@ const userSchema = mongoose.Schema({
     },
     nick: {
         type: String,
-        // require: true
+        require: true,
+        unique: true
     },
     password: {
         type: String,
@@ -25,7 +26,8 @@ const userSchema = mongoose.Schema({
     },
     email: {
         type: String,
-        require: true
+        require: true,
+        index: true
     },
     country: {
         type: String,

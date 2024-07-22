@@ -1,4 +1,5 @@
 import { Router } from "express"
+import createUser from "../../controller/users/create/createUser.js"
 
 export const user_router = Router()
 
@@ -15,9 +16,8 @@ export const user_router = Router()
  * |--user--> email
  * |--user--> password
  */
-user_router.use("/create", (req, res) => {
-    res.send({ msg: "This route is for create", status: 200 })
-})
+user_router.use("/create", createUser) 
+
 user_router.use("/delete", (req, res) => {
     res.send({ msg: "This route is for delete", status: 200 })
 })

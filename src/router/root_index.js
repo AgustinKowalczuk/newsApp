@@ -5,4 +5,4 @@ import { news_router } from "./news/news_router.js"
 export const router_index = Router()
 
 router_index.use('/user', user_router)
-router_index.use('/news', news_router)
+router_index.use('/news', news_router) 
